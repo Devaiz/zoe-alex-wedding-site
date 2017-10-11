@@ -1,0 +1,360 @@
+
+
+
+/* CSS RESET */
+
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+/* GENERAL STYLE CODE */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: url('assets/wedding-landing-background.png') repeat;
+}
+
+.white {
+color: #ffffff;
+}
+
+.black, h1, h2, p.adress {
+  color: #444349;
+}
+
+.gold, .quote-gold {
+  color: #d2ba87;
+}
+
+h1, h2, p.adress, header, .tagline,
+.ceremony, .party, .photos, .gifts,
+.contact, footer {
+  text-align: center;
+}
+
+h1 {
+  font-size: 3rem;
+  padding: 3rem 0 2rem 0;
+  letter-spacing: 0.07rem;
+}
+
+h2 {
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+
+.white-line, .date::before, .date::after,
+.tagline, .ceremony, .party, .photos,
+.black-line, .gifts, .travel, .other, .food {
+  display: inline-block;
+}
+
+.quote, .date, .gifts, h2, h3, p.black {
+  font-family: 'Libre Baskerville', serif;
+}
+
+.name, h1 {
+  font-family: 'Great Vibes', cursive;
+}
+
+footer, p.qa-text, ol, p.adress {
+  font-family: 'Muli', sans-serif;
+}
+
+p.qa-text, p.adress {
+  padding-bottom: 1rem;
+  line-height: 1.5rem;
+  font-size: 1.2rem;  
+}
+
+
+/* HEADER STYLE CODE */
+
+
+header{
+  display: table;
+}
+
+.head{
+  background: url(assets/wedding-landing-cover.jpg) no-repeat 70% center / cover;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.tagline{
+  width: 100vw;
+  height: auto;
+  background-color: hsla(100,0%,0%,.6);
+  display: table-cell;
+  vertical-align: middle;
+  padding: 1rem 0;
+}
+
+.quote, .date {
+  font-size: 1.2rem;
+  font-weight: 500;
+  letter-spacing: 0.07rem;
+}
+
+.name {
+  font-size: 3rem;
+  padding-top: 1rem;
+  letter-spacing: 0.07rem;
+}
+
+.white-line {
+  border-bottom: .1rem solid #fff;
+  width: 11em;
+  align-content: center;
+}
+
+.date {
+  padding-top: 1rem;
+}
+
+.date::before, .date::after {
+  content: "";
+  background-color: #fff;
+  height: .1rem;
+  width: 1.5rem;
+  vertical-align: middle;
+  margin: 0.5rem;
+}
+
+
+@media screen and (min-width:786px) {
+  
+  .quote {
+    text-transform: uppercase;
+    font-size: 1.3rem;
+  }
+  
+  .date{
+    font-size: 1.3rem;
+  }
+  
+  .name {
+    font-size: 4.5rem;
+  }
+  
+  .tagline {
+    display: inline-block;
+    width: 27rem;
+    padding: 1.3rem 0;
+  }
+  
+}
+
+
+/* LOCATIONS STYLE CODE */
+
+
+.locations{
+  background-size: cover;
+  width: 100vw;
+  padding-bottom: 1.5rem;
+}
+
+.ceremony, .party, .photos {
+  width: 100vw;
+  vertical-align: middle;
+  padding: 1rem 0;
+}
+
+
+img {
+  width: 7.5rem;
+  padding: 2.5rem 0;
+}
+
+.black-line {
+  border-bottom: .125rem solid #444349;
+  width: 25vw;
+  align-content: center;
+}
+
+@media screen and (min-width:786px) {
+  
+  .black-line{
+    display: none;
+  }
+  
+  .ceremony, .party, .photos {
+    width: 32%;
+  }
+  
+}
+
+
+/* PROGRAM STYLE CODE */
+
+.program {
+  background-color: hsla(100,0%,0%,.6);
+  display: table-cell;
+  width: 100vw;
+}
+
+.table{
+  padding-left: 1.5rem;
+  padding-bottom: 2rem;
+}
+
+.quote-gold {
+  font-style: italic;
+  font-size: 1.3rem;
+  padding-bottom: 1.5rem;
+}
+
+ol {
+  font-size: 1.15rem;
+  line-height: 1.7rem;
+}
+
+@media screen and (min-width:786px) {
+  
+  .table {
+    width: 30vw;
+    margin: 0 auto;
+  }
+    
+}
+
+
+/* GIFTS STYLE CODE */
+
+.gifts {
+  width: 100vw;
+  font-size: 1.2rem;
+  padding-bottom: 2rem;
+}
+
+
+/* QUESTIONS AND ANSWERS STYLE CODE */
+
+
+.q-and-a {
+  background-color: hsla(100,0%,0%,.6);
+  display: table-cell;
+  width: 100vw;
+}
+
+h3 {
+  font-size: 1.15rem;
+  font-weight: 700;
+  line-height: 1.5rem;
+  padding-bottom: 1rem;
+}
+
+h2 {
+  padding-bottom: 1.5rem;
+}
+
+
+.travel, .other, .food {
+  width: 100vw;
+  text-align: left;
+  padding: 1rem 1.5rem 2rem;
+}
+
+a {
+  text-decoration: none;
+  color: #bd806e;
+}
+
+a:hover {
+  color: #eda087;
+  transition: color .15s ease-in-out; 
+}
+
+.gold-line {
+  width: 50vw;
+  border-bottom: .125rem solid #d2ba87;
+  margin: auto;
+  margin-top: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  
+  .gold-line {
+    display: none;
+  }
+  
+  .travel, .other, .food {
+    width: 32%;
+    vertical-align: top;
+  }
+  
+}
+
+/* CONTACT STYLE CODE */
+
+
+p.black {
+  font-size: 1.15rem;
+  line-height: 1.5rem;
+  padding-bottom: 2rem;
+}
+
+
+
+/* FOOTER STYLE CODE */
+
+footer{
+  background-color: #606060;
+  width: 100vw;
+  height: 4rem;
+  line-height: 4rem;
+  font-size: .9rem;
+  color: #fff;
+}
